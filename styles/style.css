@@ -126,18 +126,18 @@ body{
     gap: 45px;
     margin-left: 500px;
 }
-.cart{
+.cart-container{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-.cart img{
+.cart{
     width: 22px;
     height: 22px;
-    vertical-align:middle;
+    
 }
 
 .span{
@@ -519,7 +519,7 @@ body{
 
 /* responsive settings for small device */
 
-@media screen and (max-width:576px) {
+/* @media screen and (max-width:576px) {
     .nav-container{
         width: 360px;
         height: 35px;
@@ -562,4 +562,9 @@ body{
     flex-direction: column;
 }
 
+} */
+
+@media screen  and (max-width:576px){
+
+    
 }
