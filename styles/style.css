@@ -1,3 +1,7 @@
+.display-hidden{
+    display: none;
+}
+
 body{
     background-color: #F5F8FF;
     
@@ -15,35 +19,35 @@ body{
 }
 
 .font-size-primary{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .font-size-secondary{
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .font-size-28{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .font-size-26{
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 .font-size-22{
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .font-size-16{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .font-size-20{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .font-size-40{
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .font-weight-regular{
@@ -94,8 +98,7 @@ body{
     width: 1140px;
     height: 70px;
     justify-content: space-between;
-   margin: 0 auto;
-
+    margin: 0 auto;
 }
 
 .nav-container-logo{
@@ -104,10 +107,7 @@ body{
     margin-top: 0px; 
 }
 
-nav .cart{
-    width: 22px;
-    height: 22px;
-}
+
 
 .menu{
     display: flex;
@@ -124,13 +124,27 @@ nav .cart{
     display: flex;
     list-style: none;
     gap: 45px;
+    margin-left: 500px;
+}
+.cart{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.cart-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.cart img{
+    width: 22px;
+    height: 22px;
+    vertical-align:middle;
 }
+
+.span{
+    margin-bottom: 25px;
+}
+
+/* section 1/navbar end */
 
 
 
@@ -146,9 +160,10 @@ nav .cart{
 .banner-text{
     width: 570;
     height: 290;
+    margin-top: 130px;
 }
 .banner-title{
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: bold;
 }
 .banner-title-font-color{
@@ -165,13 +180,17 @@ nav .cart{
 .banner-img img{
     width: 570px;
     height: 350px;
-    
+    margin-top: 105px;
 }
+
+
+
 /* <!-- start section-3/ plants-section --> */
 .plant-section{
     width: 1140px;
     height: 1180px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 .plant-text-title{
     margin-top: 0px;
@@ -501,29 +520,46 @@ nav .cart{
 /* responsive settings for small device */
 
 @media screen and (max-width:576px) {
+    .nav-container{
+        width: 360px;
+        height: 35px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
 
-   .nav-container .menu ul{
+    .nav-container .menu{
         display: none;
     }
+
     .banner-container{
-        flex-direction: column-reverse;
-    }
-
-    .card-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .plants-lover-container{
+        margin-top: 25px;
         flex-direction: column;
     }
 
-    .deal-container{
-        flex-direction: column;
-    }
+    .banner-final-image{
+    width: 390px;
+    height: 240px;
 
-    .footer-container{
-        flex-direction: column;
-    }
+}
 
-    
+.card-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+}
+
+.badge-img{
+    display: none;
+}
+.plants-lover-container{
+    flex-direction: column;
+}
+
+.deal-container{
+    flex-direction: column;
+}
+
+.footer-container{
+    flex-direction: column;
+}
+
 }
